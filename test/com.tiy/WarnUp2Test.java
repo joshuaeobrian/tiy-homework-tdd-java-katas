@@ -112,6 +112,8 @@ public class WarnUp2Test {
 		assertThat(x, equalTo("codecode"));
 	}
 
+
+	//StringBits
 	@Test
 	public void testStringBits1() throws Exception{
 		String x = warmUp2.stringBits("Hello");
@@ -157,6 +159,74 @@ public class WarnUp2Test {
 		String x = warmUp2.stringBits("hxaxpxpxy");
 		assertThat(x, equalTo("happy"));
 	}
+
+	//stringSplosion
+	@Test
+	public void testSringSplosion1() throws Exception{
+		String x = warmUp2.stringSplosion("Code");
+		assertThat(x, equalTo("CCoCodCode"));
+	}
+
+	@Test
+	public void testSringSplosion2() throws Exception{
+		String x = warmUp2.stringSplosion("abc");
+		assertThat(x, equalTo("aababc"));
+	}
+
+	@Test
+	public void testSringSplosion3() throws Exception{
+		String x = warmUp2.stringSplosion("ab");
+		assertThat(x, equalTo("aab"));
+	}
+
+	@Test
+	public void testSringSplosion4() throws Exception{
+		String x = warmUp2.stringSplosion("x");
+		assertThat(x, equalTo("x"));
+	}
+
+	@Test
+	public void testSringSplosion5() throws Exception{
+		String x = warmUp2.stringSplosion("fade");
+		assertThat(x, equalTo("ffafadfade"));
+	}
+
+	@Test
+	public void testSringSplosion6() throws Exception{
+		String x = warmUp2.stringSplosion("There");
+		assertThat(x, equalTo("TThTheTherThere"));
+	}
+
+	@Test
+	public void testSringSplosion7() throws Exception{
+		String x = warmUp2.stringSplosion("Kitten");
+		assertThat(x, equalTo("KKiKitKittKitteKitten"));
+	}
+
+	@Test
+	public void testSringSplosion8() throws Exception{
+		String x = warmUp2.stringSplosion("Bye");
+		assertThat(x, equalTo("BByBye"));
+	}
+
+	@Test
+	public void testSringSplosion9() throws Exception{
+		String x = warmUp2.stringSplosion("Good");
+		assertThat(x, equalTo("GGoGooGood"));
+	}
+
+	@Test
+	public void testSringSplosion10() throws Exception{
+		String x = warmUp2.stringSplosion("Bad");
+		assertThat(x, equalTo("BBaBad"));
+	}
+
+	@Test
+	public void testSringSplosion11() throws Exception{
+		String x = warmUp2.stringSplosion("");
+		assertThat(x, equalTo(""));
+	}
+
 
 
 }

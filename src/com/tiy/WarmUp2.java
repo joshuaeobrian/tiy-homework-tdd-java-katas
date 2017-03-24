@@ -30,4 +30,12 @@ public class WarmUp2 {
 		return nString;
 	}
 
+	public String stringSplosion(String str) {
+		String nString = "";
+		for(int i =  0; i <= str.length(); i++){
+			nString += str.substring(0,i);
+		}
+		return nString;
+	}
+
 }
